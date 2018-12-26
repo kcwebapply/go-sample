@@ -1,0 +1,3 @@
+[Http]
+  host = "https://webservice.recruit.co.jp/hotpepper/gourmet/v1/"
+  apikey = "f4104c314ca80079"
