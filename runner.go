@@ -1,12 +1,10 @@
 package main
 
 import (
-	"fmt"
-
-	httpClient "github.com/kcwebapply/go-sample/http"
+	mq "github.com/kcwebapply/go-sample/mq"
 )
 
 func main() {
-	fmt.Println("test")
-	httpClient.GetTranslate("sex")
+	//httpClient.GetTranslate("sex")
+	mq.PublishMessage()
 }

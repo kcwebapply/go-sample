@@ -1,3 +1,7 @@
 [Http]
   host = "https://webservice.recruit.co.jp/hotpepper/gourmet/v1/"
   apikey = ""
+
+[Mq]
+  host = "amqp://guest:guest@localhost"
+  port = "5672"
