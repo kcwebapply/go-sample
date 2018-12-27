@@ -32,8 +32,6 @@ func Work() {
 
 	messages, _ := consumeMessage(queueName, channel)
 
-	forever := make(chan bool)
-
 	go func() {
 		for data := range messages {
 			log.Printf("Received message！%s\n", data.Body)
@@ -43,6 +41,8 @@ func Work() {
 	go publish(queueName, 10, channel)
 
 	log.Printf(" [*] Waiting for messages. To exit press CTRL+C\n")
+
+	forever := make(chan bool)
 	<-forever
 
 }

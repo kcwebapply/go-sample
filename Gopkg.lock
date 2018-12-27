@@ -18,6 +18,14 @@
   version = "v0.5.0"
 
 [[projects]]
+  digest = "1:5f80f31b983ad0f7dc869fe1b5107e6dd5d39227ace0336e092f8511725dd928"
+  name = "github.com/carlescere/scheduler"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "ddcf6a6be3e8bd4b480f96031d9e1f3abecf2767"
+  version = "0.1"
+
+[[projects]]
   branch = "master"
   digest = "1:525ac3364813b4688df380594e562133e07830dfce0722effda64b37634c13d0"
   name = "github.com/streadway/amqp"
@@ -31,6 +39,7 @@
   input-imports = [
     "github.com/BurntSushi/toml",
     "github.com/bitly/go-simplejson",
+    "github.com/carlescere/scheduler",
     "github.com/streadway/amqp",
   ]
   solver-name = "gps-cdcl"
